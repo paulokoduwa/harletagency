@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+
+
+body{
+  font-family: 'Josefin sans';
+}
+
+
+/*navbar style */
+.navbar{
+  font-size: 20px;
+  border: none;
+  padding-bottom: 10px;
+  background:transparent;
+  position:absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%
+
+
+}
+
+.main-nav{
+  list-style-type: none;
+  display:none;
+}
+
+.nav-link,
+.logo{
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.main-nav li{
+  text-align: center;
+  margin: 15px auto 3px;
+}
+
+ul li button{
+  background-color: ;
+  border:none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+ul li button:hover{
+
+
+
+
+
+}
+
+
+
+
+.logo{
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.navbar-toggle{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255,255,255, 0.8);
+  font-size: 24px;
+
+}
+
+.active{
+  display: block;
+}
+
+@media screen and (min-width: 768px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    top: 10px;
+  }
+.main-nav{
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.main-nav li {
+  margin: 0;
+}
+.nav-link{
+  margin-left: 40px;
+}
+.logo{
+  margin-top: 0;
+}
+.navbar-toggle{
+  display: none;
+}
+.logo:hover,
+.nav-link:hover{
+color:rgba(255,255,255, 1);
+text-decoration: none;
+
+}
+}
+
+.logo:active,
+.nav-link:active{
+  color:rgba(255, 10, 10, 0.5);
+  text-decoration: none;
+
+}
+/* End of main nav style */
+
+/*styles for the ham bar*/
+
+.hambar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+/* end of hambar styles*/
+/*beginning of body style */
+
+.site-heading{
+margin-top: 50px;
+}
+
+.subheading{
+  font-size: 1.5em;
+  color:tomato;
+  font-stretch: expanded;
+  color: red !important;
+
+}
+
+#bounce .wrap {
+  color: green;
+  font-weight: 400;
+  font-size: 30px;
+
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+.bg_red{
+background: linear-gradient(48deg, rgb(203, 36, 0) -30%, #e1332d 60%) !important;
+box-shadow: 8px 10px 20px 0 rgba(255, 255, 255, 0.2);
+color: #fff !important;
+border: 1px solid transparent;
+margin-bottom: 35px;
+border-radius: 50px;
+padding-top: 7px;
+padding-bottom: 8px;
+padding-left: 26px !important;
+padding-right: 26px !important;
+font-size: 16px;
+
+}
+/* style for the overlay and header image */
+header.masthead {
+  margin-bottom: 30px;
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.8;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+
+
+.heading_center{
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 30px
+}
+
+/* style for bg_form image*/
+
+
+
+/* this will style the colums with shadow */
+.shadow {
+border: transparent;
+box-shadow: 0 10px 45px 0 rgba(0,0,0,.1);
+margin: auto;
+text-align: center;
+}
+.shadow_box{
+  display: inline-block;
+}
+.shadow_body{
+  padding: 20px;
+}
+
+.shadow_width{
+  padding-left:50px !important;
+  padding-right:50px !important;
+}
+
+.shadow_text{
+  font-weight: 400;
+  font-size: 16px;
+}
+.why_choose{
+  margin:10px;
+  text-align: justify;
+}
+
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1.5%;
+  width: 30%;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-width:480px){
+  .card{
+    width: 94%;
+    margin: 1.5%
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .card{
+    width:94%;
+    margin:1.5%;
+  }
+}
+
+
+
+.list_topic{
+  color:red;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.list_post{
+  font-size:14px;
+  color:grey;
+  display: block;
+  text-align: justify !important;
+}
+
+#click_button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border:none;
+  outline: none;
+  display: inline-block;
+  padding: 8px;
+  font-size:16px;
+  background: grey;
+   width: 100%;
+
+
+}
+
+#click_button button{
+  padding:5px;
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+}
+
+#click_button button a{
+  text-decoration: none;
+  color: white;
+}
+
+#click_button button:hover a:hover{
+  opacity: 0.6;
+}
+
+section.about {
+  margin-bottom: 30px;
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+section.about .overlay_about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.8;
+}
+
+
+section.about {
+  padding: 10px 0 50px;
+  color: white;
+}
+
+@media screen and (min-width:768px){
+  .about_left{
+    position: relative;
+    top:0;
+    left:500px;
+    padding-top:0 !important;
+  }
+  
+}
+
+.about_left{
+  margin:10px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  
+}
+.footer_center{
+  align-content: center;
+  text-align: center;
+}
+
+.footer_head{
+font-size:18px;
+color:red;
+
+}
+
+.footer_p{
+ display: block;
+}
+
